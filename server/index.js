@@ -5,9 +5,15 @@ import cors from 'cors'
 import dalleRoutes from './routes/dalle.routes.js'
 
 dotenv.config();
-
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+    origin: ['https://your-frontend-domain.com'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    crendentials: true
+};
+app.use(cors(corsOptions));
+
 app.use(express.json({ limit: "50mb" }))
 
 app.use('/api/v1/dalle', dalleRoutes)
