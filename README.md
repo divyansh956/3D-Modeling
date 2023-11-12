@@ -41,7 +41,7 @@ Take your T-shirt designs to the next level by integrating the OpenAI API. Gener
    npm start
    ```
 
-   Open your browser and navigate to `http://localhost:3000` to access the 3D T-Shirt Modeling Customizer.
+   Open your browser and navigate to `http://localhost:5173` to access the 3D T-Shirt Modeling Customizer.
 
 ## Usage
 
