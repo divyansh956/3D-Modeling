@@ -53,7 +53,7 @@ const Customizer = () => {
     try {
       setGeneratingImg(true);
 
-      const response = await fetch(`${config.development.backendUrl}`, {
+      const response = await fetch(`https://3d-modeling-server.vercel.app/api/v1/dalle`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
