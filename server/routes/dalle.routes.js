@@ -1,5 +1,5 @@
 import express from "express";
-import * as dotenv from 'dotenv'
+import dotenv from 'dotenv'
 import OpenAI from 'openai'
 dotenv.config()
 
@@ -16,7 +16,7 @@ router.route('/').get((req, res) => {
 router.route('/').post(async (req, res) => {
     try {
         const { prompt } = req.body
-        console.log(prompt);
+        // console.log(prompt);
 
         const response = await openai.images.generate({
             prompt: prompt,
