@@ -92,6 +92,9 @@ const Customizer = () => {
       case "stylishShirt":
         state.isFullTexture = !activeFilterTab[tabName];
         break;
+      case "downloadshirt":
+        downloadCanvasToImage();
+        break;
       default:
         state.isLogoTexture = true;
         state.isFullTexture = false;
