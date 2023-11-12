@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-    origin: ['https://your-frontend-domain.com'],
+    origin: ['https://3d-modeling-tshirt.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     crendentials: true
 };
